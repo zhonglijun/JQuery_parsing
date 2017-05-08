@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="zlj" class="zlj">
+			封装选择器
+		</div>
+		<script src="jq.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/selector.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			/**
+			 * 选择器
+			 * @param {Object} selectors可以是.类，#id,标签
+			 */
+			var $ = function(selectors) {
+				var elem;
+				var selector = selectors.substring(0, 1);
+				if(selector == '#') {
+					//id选择器
+					elem = document.getElementById(selectors.substring(1));
+				} else if(selector == ".") {
+					//类选择器
+					elem = document.getElesmentsByClassName(selectors.substring(1));
+				} else {
+					//标签选择器
+					elem = document.getElementsByTagName(selectors);
+				}
+				s
+				return elem;
+			};
+			var id_selector = $("#zlj").innerHTML;
+			var class_selector = $(".zlj")[0].innerHTML;
+			var tag_selector = $("div")[0].innerHTML;
+			console.log("id选择器:" + id_selector);
+			console.log("类选择器:" + class_selector);
+			console.log("标签s选择器:" + tag_sel1ector)
+
+			<
+			/body>
+
+			<
+			/html>
